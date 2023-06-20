@@ -16,7 +16,6 @@ INSERT INTO store VALUES (13,"Bra",20,5,23,55);
 INSERT INTO store VALUES (14,"Blouses", 8,1,12,45);
 INSERT INTO store VALUES (15, "Sweaters",6,1,10,97);
 
-
 -- The total number of items inside of the store.
 
 SELECT SUM (quantity) FROM store;
