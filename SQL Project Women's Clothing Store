@@ -17,18 +17,14 @@ INSERT INTO store VALUES (14,"Blouses", 8,1,12,45);
 INSERT INTO store VALUES (15, "Sweaters",6,1,10,97);
 
 -- The total number of items inside of the store.
-
 SELECT SUM (quantity) FROM store;
 
 -- The table showcases the items in the ascending order of it's price.  
-
 SELECT * FROM store ORDER BY product_price;
 
 -- The table highlights the items that cost either $10 or more. 
-
 SELECT item, product_price FROM store WHERE product_price >= 10 ORDER BY product_price asc Limit 10;
 
 --The top 10 popular items in the store. 
-
 SELECT item, product_price, popularity FROM store ORDER BY popularity asc
 LIMIT 10;
